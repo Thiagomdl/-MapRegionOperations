@@ -1,0 +1,66 @@
+<div class="ui-c-reprove-modal m-0 p-0">
+  <div class="modal-body">
+    <div class="container">
+      <h2 class="modal-title font-family-semibold text-center">
+        Editar restrição do estado <strong>{{location}}</strong>
+      </h2>
+
+      <div class="col-12" >
+        <div class="form-group" >
+          <label class="information">
+            Marque o tipo de restrição: (Todas as restrições serão aplicadas no processo de abertura de conta a partir do momento de sua inclusão)
+          </label>
+        </div>
+      </div>
+
+      <div class="col-21">
+        <mat-radio-group aria-label="Select an option" [(ngModel)]="selectedOption">
+          <tr>
+            <mat-radio-button [value]="'semrestricao'" [checked]="selectedOption === ''">
+              <strong>Sem restrição</strong> 
+              : Não existem restrições para a abertura de contas neste estado
+            </mat-radio-button>
+          </tr>
+          <tr>
+            <mat-radio-button [value]="'geolocation'"
+              [checked]="selectedOption === 'geolocation'"> <strong>Geolocalização</strong> 
+              : Abertura para clientes fisicamente localizados apenas dentro do estado
+            </mat-radio-button>
+          </tr>
+          <tr>
+            <mat-radio-button [value]="'zipcode'" [checked]="selectedOption === 'zipcode'"> 
+              <strong> Endereço de domicílio </strong> 
+              : Abertura para clientes que residem exclusivamente dentro do estado
+            </mat-radio-button>
+          </tr>
+          <tr>
+            <mat-radio-button [value]="'geolocationAndZipcode'"
+              [checked]="selectedOption === 'geolocationAndZipcode'"> 
+              <strong> Geolocalização e endereço de domicílio</strong> 
+              : Abertura para clientes fisicamente localizados <strong>e</strong> residentes dentro do estado
+            </mat-radio-button>
+          </tr>
+          <tr>
+            <mat-radio-button [value]="'geolocationOrZipcode'"
+              [checked]="selectedOption === 'geolocationOrZipcode'"> 
+              <strong>Geolocalização ou endereço de domicílio</strong>
+              : Abertura para clientes fisicamente localizados <strong>ou</strong> residentes dentro do estado
+              </mat-radio-button>
+          </tr>
+        </mat-radio-group>
+      </div>
+
+      
+      <div class="container text-center buttons">
+        <button type="button" class="btn btn-danger font-weight-bolder custom-btn-size m-3" (click)="closeModal()">
+          Cancelar
+        </button>
+
+        <button type="button" class="btn btn-primary font-weight-bolder custom-btn-size m-3" (click)="submitModal()">
+          Salvar
+        </button>
+      </div>
+      
+    </div>
+  </div>
+</div>

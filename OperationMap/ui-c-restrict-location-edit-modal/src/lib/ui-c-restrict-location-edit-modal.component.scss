@@ -1,0 +1,32 @@
+.mat-mdc-chip-set {
+    max-width: 200px;
+  }
+
+.icon {
+  color: lightseagreen;
+}
+
+.ui-c-reprove-modal {
+  z-index: 10000; /* ou um valor maior se necessário */
+}
+
+:host ::ng-deep .ui-c-reprove-modal {
+  z-index: 10000; /* ou um valor maior se necessário */
+}
+
+.modal-title{
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.custom-btn-size {
+  width: 200px; 
+}
+
+.information {
+  font-weight: bold !important;
+  color: #191970 !important;
+}

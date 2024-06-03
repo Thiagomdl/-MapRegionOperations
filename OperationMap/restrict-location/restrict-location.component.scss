@@ -1,0 +1,274 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.map {
+  flex: 90%;
+}
+
+.legend {
+  flex: 50%;
+  font-family: 'Helvetica', 'Arial';
+  height: 300px;
+  align-self: flex-end;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.legend h3 {
+  font-size: 1.5rem;
+  font-family: 'Helvetica', 'Arial';
+  font-weight: bold;
+}
+
+.legend .custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.legend .custom-list li {
+  font-size: 14px;
+  margin-bottom: -2;
+  font-family: 'Helvetica', 'Arial';
+  font-weight: 5px;
+}
+
+@media (max-width: 600px) {
+  .legend .custom-list li {
+    font-size: 0.9rem;
+  }
+}
+
+.operationSelect {
+  height: 8%;
+}
+
+.parceiro {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#svg-map path {
+  fill: #C0C0C0
+}
+
+#svg-map text {
+  fill: #fff;
+  font: 12px Arial-BoldMT, sans-serif;
+  cursor: pointer
+}
+
+#svg-map a {
+  text-decoration: none
+}
+
+#svg-map a:hover {
+  cursor: pointer;
+  text-decoration: none
+}
+
+#svg-map a:hover path {
+  fill: #003399 !important
+}
+
+#svg-map .circle {
+  fill: #66ccff
+}
+
+#svg-map a:hover .circle {
+  fill: #003399 !important;
+  cursor: pointer
+}
+
+// #svg-map # path {
+//   fill: red !important;
+// }
+
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+* {
+  font-family: lato;
+  box-sizing: border-box;
+}
+
+.selectPrtner,
+.buttonPartner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.selectPrtner {
+  margin-right: 10px;
+}
+
+.tooltip {
+  border-bottom: dotted 1px gray;
+  padding-top: 1rem;
+  margin-top: -1rem;
+  padding-bottom: .1rem;
+}
+
+.restrictTool {
+  font-family: 'Helvetica', 'Arial';
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.restrictToolHour {
+  font-family: 'Helvetica', 'Arial';
+  font-size: 17px;
+  color: #191970;
+
+  strong {
+    color: #B22222;
+    font-family: 'Helvetica', 'Arial';
+  }
+}
+
+.restrictToolList {
+  font-family: 'Helvetica', 'Arial';
+  font-size: 14px;
+    li {
+      font-family: 'Helvetica', 'Arial';
+    }
+}
+
+.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.custom-list li::before {
+  content: "\2022";
+  font-size: 35px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.custom-list li:nth-child(1)::before {
+  color: #D3D3D3;
+}
+
+.custom-list li:nth-child(2)::before {
+  color: #9BB58E;
+}
+
+.custom-list li:nth-child(3)::before {
+  color: #92A8D1;
+}
+
+.custom-list li:nth-child(4)::before {
+  color: #D7A8B4;
+}
+
+.custom-list li:nth-child(5)::before {
+  color: #D4C49A;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wlnames {
+  margin-right: 10px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+::ng-deep {
+  .container-fluid {
+    padding-left: 0;
+  }
+
+  .mat-form-field {
+    display: block !important;
+  }
+
+  .input-percent {
+    max-width: 55px;
+    min-width: 55px;
+  }
+
+  .input-currency {
+    max-width: 85px;
+    min-width: 85px;
+  }
+
+  .send-code-component .title {
+    margin-left: 5px;
+    color: var(--ui-t-color-primary);
+  }
+}
+
+.card-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-end {
+  position: absolute;
+  right: 18px;
+}
+
+
+.border {
+  border: 0px solid #EBEDF3 !important;
+}
+
+.mat-progress-bar-buffer {
+  background-color: #bac6e9;
+}
+
+.mat-progress-bar {
+  border-radius: 2px;
+}
+
+.title-message {
+  color: var(--ui-t-color-dark);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.smsCode {
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
+}
+
+.sms-text {
+  padding: 30px;
+}
+
+.celphone {
+  font-size: 15px;
+  font-weight: bold;
+}
